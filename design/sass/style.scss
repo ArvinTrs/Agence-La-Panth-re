@@ -1,27 +1,13 @@
 *{box-sizing: border-box;}
 
-@font-face {
-    font-family: 'FontAwesome';
-    src: url('fonts/fontawesome-webfont.eot?v=4.7.0');
-    src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype');
-    font-weight: normal;
-    font-style: normal
-}
-@font-face {
-    font-family: 'et-line';
-    src: url(../fonts/et-line.eot);
-    src: url(../fonts/et-line.eot?#iefix) format('embedded-opentype'), url(fonts/et-line.woff) format('woff'), url(fonts/et-line.ttf) format('truetype');
-    font-weight: 400;
-    font-style: normal
-}
-@font-face {
-    font-family: 'helveticaregular';
-    src: url('fonts/helvetica-webfont.woff2') format('woff2'),
-         url('fonts/helvetica-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+// Variables
+    // Couleurs Principales
+    $primaryColor: rgb(243, 151, 108);
+    $secondaryColor: rgb(250, 213, 196);
+    $thirdColor: rgb(141, 117, 80);
+    $fourthColor: rgb(104, 104, 104);
 
+// Mixins
 @mixin position-el($type,$top,$right,$bottom,$left){
     position: $type;
     top: $top;
@@ -42,11 +28,11 @@
 html{font-size: 62.5%;}
 
 body{
-    font-family: 'helveticaregular';
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     
     h1, h2, h3{
-        font-size: 24px;
+        font-size: 26px;
         font-weight: 700;
         margin: 0;
     }
@@ -66,7 +52,7 @@ body{
 
 .logo-full{
     @include baseFlexB (row wrap, flex-start, center);
-    width: 75%;
+    width: 210px;
 }
 
 /* End GLOBAL */
@@ -123,10 +109,8 @@ header{
 /* Début Main */
 
 main{
-    background-color: antiquewhite;
-    
     .main_block_banniere{
-        background-image: url(../../img/back-img1.jpg.jpg);
+        background: url(../../img/back-img1.jpg) 50%;
         background-position: 50%;
         background-size: cover;
         padding: 50px 5px;
@@ -155,16 +139,96 @@ main{
     }
 
 .main_present{
+    padding: 40px 20px;
     .present_container{
-        padding: 40px 20px;
-    }
-}
-
-    .main_realisation{
-        img{
-            width: 50%;
+        color: $fourthColor;
+        h2{
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .present_container_block{
+            margin: 20px 0;
+            font-size: 16px;
+            @include baseFlexB(row wrap, center, center);
+            .present_content{
+                margin: 20px auto 0;
+                width: 230px;
+                text-align: center;
+                img{
+                    width: 100px;
+                }
+                h3{
+                    color: black;
+                }
+            }
+        }
+        .present_citation{
+            max-width: 400px;
+            text-align: center;
+            font-style: italic;
+            margin: 10px auto;
+            padding: 10px;
+            color: white;
+            background-color: $fourthColor;
+            strong{
+                font-weight: normal;
+            }
         }
     }
 }
 
+}
+
+.main_objectif{
+    /*height: 400px;*/
+    background: url(../../img/back-img2.jpg);
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+    h2{
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+    .main_objectif_block{
+        @include baseFlexB(column wrap, center, center);
+        background-color: $thirdColor;
+        color: white;
+        opacity: 0.7;
+        font-size: 18px;
+        padding: 10px 20px;
+        text-align: center;
+        p{
+                &:nth-child(2){
+                    color: $secondaryColor;
+            }
+                &:nth-child(3){
+                    color: white;
+            }
+        }
+
+        a{
+            font-size: 20px;
+            color: white;
+
+        }
+        
+    }
+}
+
+.main_realisation{
+    img{
+        width: 50%;
+    }
+}
+
 /* Fin Main */
+
+/* Début Footer */
+
+footer{
+    background-color: rgb(243, 151, 108);
+}
+
+/* Fin Footer */

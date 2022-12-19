@@ -18,7 +18,11 @@ main{
         .block_banniere_projet{
             h1{
                 color: white;
-                font-size: 24px;
+                font-size: 24px;            
+            }
+            p{
+                font-size: 14px;
+
             }
         }
         form{
@@ -47,13 +51,22 @@ main{
                 button{
                     margin: auto;
                     font-size: 14px;
-                    color: rgb(243, 151, 108);
+                    color: $primaryColor;
                     border: none;
                     background-color: white;
                     padding: 10px 25px;
                     border-radius: 25px;
                     text-transform: uppercase;
-                    box-shadow: 1px 1px rgb(97, 97, 97)smoke;
+                    box-shadow: 1px 1px rgb(227, 227, 227);
+                    cursor: pointer;
+                    transform: scale(1);
+                    transition: transform 400ms;
+                    &:hover{
+                        background-color: rgb(165, 165, 165);
+                        color: white;
+                        transition: all 500ms;
+                        transform: scale(1.10);
+                    }
                 }
             }
         }
@@ -61,12 +74,14 @@ main{
     }
     .main_loca{
         h2{
+            font-size: 18px;
             color: $fourthColor;
-            margin: 20px 0 0 ;
+            margin: 20px 20px 0 ;
         }
         .main_loca-block{
             @include baseFlexB(column wrap, center, center);
             div{
+                font-size: 14px;
                 p{
                     color: $fourthColor;
                 }

@@ -1,0 +1,44 @@
+/* Start GLOBAL */
+
+html{font-size: 62.5%;}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    
+    h1, h2, h3{
+        font-size: 26px;
+        font-weight: 700;
+        margin: 0;
+        text-align: center;
+        color: $fifthColor;
+    }
+
+    p, a{
+        text-align: center;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 80%;
+    }
+
+    ul, ol{
+        list-style-type: none;
+        list-style: none;
+    }
+
+}
+
+strong{ 
+    font-weight: normal;    
+    text-decoration: none;
+}
+
+.logo-full{
+    @include baseFlexB (row wrap, flex-start, center);
+    width: 210px;
+}
+
+/* End GLOBAL */

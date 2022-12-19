@@ -1,0 +1,84 @@
+// fonctions sass
+@import "./fonction-sass/variables";
+@import "./fonction-sass/mixins";
+
+// Importation de partie du code
+@import "./part-code/footer";
+@import "./part-code/header";
+@import "./part-code/global";
+
+main{
+    .main_block_banniere{
+        background-image: url(../../img/texture-paper.png.png);
+        background-size: contain;
+        background-color: $primaryColor;
+        padding: 20px;
+        color: white;
+        font-size: 16px;
+        .block_banniere_projet{
+            h1{
+                color: white;
+                font-size: 24px;
+            }
+        }
+        form{
+            @include baseFlexB(row wrap, center, center);
+            margin-top: 20px;
+            fieldset{
+                font-weight: 600;
+                border: 2px solid $secondaryColor;
+                border-radius: 15px;
+                legend{
+                    font-size: 16px;
+                }
+                & > div{
+                    margin: 15px 0;
+                }
+                input{
+                    padding: 2px;
+                    height: 35px;
+                }
+                input, textarea{
+                    resize : both;
+                    width: 100%;
+                    border-radius: 15px;
+                    border: 1px solid $thirdColor; 
+                }
+                button{
+                    margin: auto;
+                    font-size: 14px;
+                    color: rgb(243, 151, 108);
+                    border: none;
+                    background-color: white;
+                    padding: 10px 25px;
+                    border-radius: 25px;
+                    text-transform: uppercase;
+                    box-shadow: 1px 1px rgb(97, 97, 97)smoke;
+                }
+            }
+        }
+        
+    }
+    .main_loca{
+        h2{
+            color: $fourthColor;
+            margin: 20px 0 0 ;
+        }
+        .main_loca-block{
+            @include baseFlexB(column wrap, center, center);
+            div{
+                p{
+                    color: $fourthColor;
+                }
+            }
+            .main_loca-map{
+                margin: 25px 20px 0 20px;
+                max-width: 600px;
+                #gMap{
+                    width: 100%;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}

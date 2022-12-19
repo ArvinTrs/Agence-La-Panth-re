@@ -1,0 +1,15 @@
+// Mixins
+@mixin position-el($type,$top,$right,$bottom,$left){
+    position: $type;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin baseFlexB($f-flow,$justify-c,$align-i){
+    display: flex;
+    flex-flow: $f-flow;
+    justify-content: $justify-c;
+    align-items: $align-i;
+}

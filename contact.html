@@ -1,10 +1,12 @@
 <!doctype html>
-<html lang="Default">
+<html lang="fr">
 	<head>
 		<meta charset="utf-8">
-		<meta name="keywords" content="">
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+		<link rel="stylesheet" href="design/css/normalize.css">
+		<script src="https://kit.fontawesome.com/ed02f4a770.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="design/css/page-contact.css">
 
 		<title>Contact</title>
 
@@ -19,19 +21,18 @@
 			<!-- Début entête -->
 			<header>
 				<nav class="navbar row">
-					<div class=" logo-nav navbar-header">
-						<a class="navbar-brand" href="index.html"><img src="img/logo-full_lp.png.png" alt="Agence La panthère" height="40"></a>
-					</div>
-					<div class=" lien-nav collapse navbar-collapse navbar-1 special-dropdown-nav">
-						<ul class="site-navigation nav navbar-nav">
-							<li>
-								<a href="index.html">Accueil</a>
-							</li>
-							<li>
-								<a href="page2.html">Contact</a>
-							</li>
-						</ul>
-					</div>
+					<input type="checkbox" id="check">
+					<label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
+					<label class="navbar-brand"><a href="index.html"><img class="logo-full" src="img/logo-full_lp2.png" alt="Agence La panthère"></a></label>
+	
+					<ul class="site-navigation nav navbar-nav">
+						<li>
+							<a class="active" href="index.html">Accueil</a>
+						</li>
+						<li>
+							<a class="active" href="contact.html">Contact</a>
+						</li>
+					</ul>
 				</nav>
 			</header>
 			<!-- Fin Entête -->
@@ -51,16 +52,16 @@
 						<fieldset>
 							<legend>Votre projet</legend>
 							<div>
-								<label for="name">Nom</label>
+								<label for="name">Nom</label> <br>
 								<input type="text" id="name">
 							</div>
 							<div>
-								<label for="mail">Adresse email</label>
+								<label for="mail">Adresse email</label> <br>
 								<input type="text" id="mail">
 							</div>
 							<div>
-								<label for="brief">Brief de votre projet (Ajoutez autant de détails que nécessaire)</label>
-								<textarea id="brief" name="brief" rows="5" cols="33"></textarea>
+								<label for="brief">Brief de votre projet (Ajoutez autant de détails que nécessaire)</label> <br>
+								<textarea id="brief" name="brief" rows="5" cols="30"></textarea>
 							</div>
 							<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 								Envoyer
@@ -70,40 +71,49 @@
 				</div>
 
 				<section class="main_loca">
-					<div>
-						<p>contact@agencelapanthere.com</p>
-						<p>place Sathonay 69001 Lyon</p> 
-						<p>Ouvert de 9h à 18h, du lundi au vendredi</p>
+					<h2>Notre Agence Web est basée à Lyon</h2>
+					<div class="main_loca-block">
+						<div class="main_loca-map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d695.7765782975445!2d4.8306466!3d45.7690596!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb0200a855c7%3A0x235181687eba9249!2sPl.%20Sathonay%2C%2069001%20Lyon!5e0!3m2!1sfr!2sfr!4v1671463247812!5m2!1sfr!2sfr" id="gMap" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+						<div>
+							<p>contact@agencelapanthere.com</p>
+							<p>place Sathonay 69001 Lyon</p> 
+							<p>Ouvert de 9h à 18h, du lundi au vendredi</p>
+						</div>
 					</div>
-					<div class="main_loca-map"></div>
 				</section>
 
 			</main>
 			<!-- Fin Main -->
 			<!--Début Footer-->
 			<footer>
-				<img src="img/logo-full_lp.png.png" alt="Agence La Panthère">
-				<div>
+				<div class="footer_logo">
+					<img class="logo-full logo-full2" src="img/logo-full_lp3.png" alt="Agence La Panthère">
+				</div>
+				<div class="footer_social">
 					<a href="index.html"><i class="fa fa-twitter icon-md"></i></a>
 					<a href="index.html"><i class="fa fa-facebook icon-md"></i></a>
 					<a href="index.html"><i class="fa fa-dribbble icon-md"></i></a>
 					<a href="index.html"><i class="fa fa-instagram icon-md"></i></a>
 				</div>
-				<nav>
-					<ul class="site-navigation nav navbar-nav">
-						<li>
-							<a href="index.html">Accueil</a>
-						</li>
-						<li>
-							<a href="page2.html">Contact</a>
-						</li>
-					</ul>
-				</nav>
-				<div>
+				<div class="footer_nav">
+					<nav>
+						<ul class="site-navigation nav navbar-nav">
+							<li>
+								<a href="index.html">Accueil</a>
+							</li>
+							<li>
+								<a href="page2.html">Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer_contact">
 					<a href="mailto:contact@agencelapanthere.com">contact@agencelapanthere.com</a>
 					<p>2 place Sathonay 69001 Lyon</p>
 				</div>
-			</footer>
+			</footer>	
 			<!--Fin Footer-->
 		</div>
 		<!--Fin Page Container-->

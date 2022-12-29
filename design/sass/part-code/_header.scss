@@ -52,9 +52,44 @@ header{
                 left: 0;
                 top: 59px;
                 transition: left 500ms;
+                z-index: 2;
             }
         }
     }
 }
 
 /* Fin Header */
+
+@media only screen and (min-width : 768px) {
+    header{
+        nav{
+            justify-content: space-between;
+            .checkbtn{
+                display: none;
+            }
+            ul{
+                @include baseFlexB(row wrap, center, center);
+                position: inherit;
+                top: 0;
+                left: 0;
+                width: fit-content;
+                height: inherit;
+                margin: 0;
+                letter-spacing: 1px;
+                li{
+                    display: inline;
+                    border: none;
+                    margin: 0 15px;
+                    &:hover{
+                        text-decoration: underline;
+                        background-color: white;
+                        a{
+                            color: black;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

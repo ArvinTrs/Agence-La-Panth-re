@@ -1,0 +1,194 @@
+
+/* Début Main */
+
+main{
+    h2{
+        font-size: 24px;
+        color: white;
+    }
+    .main_block_banniere{
+        background: url(../../img/back-img1.jpg) 50%;
+        background-position: 50%;
+        background-size: cover;
+        padding: 50px 5px;
+        .block_banniere_content{
+            @include baseFlexB(column wrap, space-between, center);
+            margin: auto;
+            background-color: transparent;
+            height: 200px;
+            .logo{
+                width: 100px;
+            }
+            a{
+                font-size: 16px;
+                color: white;
+                background-color: rgb(243, 151, 108);
+                padding: 10px 25px;
+                border-radius: 25px;
+                text-transform: uppercase;
+                box-shadow: 1px 1px rgb(228, 121, 72);
+            }
+        }
+    }
+
+.main_present{
+    padding: 40px 20px;
+    .present_container{
+        color: $fourthColor;
+        h1{
+            color: $fourthColor;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .present_container_block{
+            margin: 20px 0;
+            font-size: 16px;
+            font-weight: normal;
+            @include baseFlexB(row wrap, center, center);
+            .present_content{
+                @include baseFlexB(column wrap, center, center);
+                margin: 20px 30px;
+                width: 264px;   
+                h3{
+                    font-size: 18px;
+                    text-transform: uppercase;
+                }
+                img{
+                    width: 100px;
+                }
+            }
+        }
+        .present_citation{
+            max-width: 400px;
+            text-align: center;
+            font-style: italic;
+            margin: 10px auto;
+            padding: 10px;
+            color: white;
+            background-color: $fourthColor;
+            font-size: 16px;
+            q{
+                margin: 0 20px;
+                
+                cite{
+                    display: inline-block;
+                    margin: 0;
+                    font-weight: normal;
+                }
+            }
+            strong{
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+}
+
+.main_objectif{
+    background: url(../../img/back-img2.jpg);
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+    h2{
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+    .main_objectif_block{
+        @include baseFlexB(column wrap, center, center);
+        position: relative;
+        color: white;
+        font-size: 18px;
+        padding: 20px 20px 40px 20px;
+        text-align: center;
+        z-index: 1;
+        &::before{
+            content: '';
+            display: inline-block;
+            background-color: $thirdColor;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+        p{
+                &:nth-child(2){
+                    font-size: 16px;
+                    color: $secondaryColor;
+            }
+                &:nth-child(3){
+                    color: white;
+                    font-size: 16px;
+            }
+        }
+
+        a{
+            font-size: 16px;
+            color: white;
+            background-color: rgb(243, 151, 108);
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-transform: uppercase;
+            box-shadow: 1px 1px rgb(228, 121, 72);
+        }
+        
+    }
+}
+
+.main_realisation{
+    background-image: url(../../img/texture-line.png.png);
+    .realisation-block{
+        @include baseFlexB(column wrap, center, center);
+        padding: 40px 20px;
+        h2{
+            font-weight: normal;
+            color: $fifthColor;
+            font-size: 26px;
+            text-align: center;
+        }
+        .realisation-articles{
+            article{
+                max-width: 375px;
+                margin: 40px 0;            
+                h3{
+                    font-size: 16px;
+                    text-transform: uppercase;
+                }
+                p{
+                    margin: 0;
+                    font-size: 16px;
+                    color: $fourthColor;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.banniere-2{
+    .banniere-2_content{
+        @include baseFlexB(column wrap, center, center);
+        color: white;
+        font-weight: bold;
+        a{
+            margin-top: 15px;
+            font-size: 16px;
+            color: white;
+            background-color: $primaryColor;
+            padding: 10px 16px;
+            border-radius: 25px;
+            box-shadow: 0.5px 0.5px rgb(228, 121, 72);
+        }
+    }
+
+}
+
+
+
+/* Fin Main */
+

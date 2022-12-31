@@ -1,49 +1,78 @@
-/* Début Footer */
+
 
 footer{
+    margin: auto;
     background-color: $primaryColor;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 20px;
-    .logo-full2{
-      width: 250px;
-    }
-    .footer_social{
-        margin-top: 9px;
-        margin-left: 5px;
-        letter-spacing: 10px;
-        font-size: 35px;
-        a{
-            color: white;
+    .footer-block{
+        max-width: 1300px;
+        .logo-full2{
+          width: 250px;
         }
-    }
-    nav{
-        font-size: 14px;
-        width: 100%;
-        ul{
-            padding: 0;
-            li{
-                padding: 5px 0;
-                a{
-                    font-size: 16px;
-                    color: $fourthColor;
-                }
+        .footer_social{
+            margin-top: 9px;
+            margin-left: 5px;
+            letter-spacing: 10px;
+            font-size: 35px;
+            a{
+                color: black;
             }
         }
-
-    }
-    .footer_contact{
-        font-size: 14px;
-        width: 100%;
-        a{
-            font-size: 16px;
-            color: $fourthColor;
+        nav{
+            font-size: 18px;
+            width: 100%;
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    padding: 5px 0;
+                    a{
+                        font-size: 18px;
+                    }
+                }
+            }
+    
         }
-        p{
-            color: $fourthColor;
-            text-align: left;
+        .footer_contact{
+            font-size: 18px;
+            width: 100%;
+            margin-top: 15px;
+            a{
+                font-size: 18px;
+            }
+            p{
+                margin:0;
+                text-align: left;
+            }
         }
     }
 }
 
 
-/* Fin Footer */
+@media only screen and (min-width : 425px) {
+    footer{
+        @include baseFlexB(row wrap, center, center);
+        gap: 30px;
+        .footer-block{
+            width: 1300px;
+            @include baseFlexB(row wrap, space-between, center);
+            div{
+               width: fit-content;
+            }
+            .footer_block-info{
+                @include baseFlexB(row wrap, space-between, center);
+             
+                .footer_contact{
+                    width: fit-content;
+                    margin-left: 50px;
+                    margin: 0 15px 0 50px;
+                    padding: 5px 0;
+                    p{
+                        margin: 0;
+                    }
+                }           
+            }
+        }
+    }
+}

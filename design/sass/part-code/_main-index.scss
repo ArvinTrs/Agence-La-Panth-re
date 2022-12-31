@@ -1,5 +1,5 @@
 
-/* Début Main */
+/* Début Main Responsive Mobile */
 
 main{
     h2{
@@ -12,10 +12,11 @@ main{
         background-size: cover;
         padding: 50px 5px;
         .block_banniere_content{
-            @include baseFlexB(column wrap, space-between, center);
+            @include baseFlexB(column wrap, center, center);
+            gap: 20px;
             margin: auto;
             background-color: transparent;
-            height: 200px;
+            height: 300px;
             .logo{
                 width: 100px;
             }
@@ -31,57 +32,57 @@ main{
         }
     }
 
-.main_present{
-    padding: 40px 20px;
-    .present_container{
-        color: $fourthColor;
-        h1{
+    .main_present{
+        padding: 40px 20px;
+        .present_container{
             color: $fourthColor;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .present_container_block{
-            margin: 20px 0;
-            font-size: 16px;
-            font-weight: normal;
-            @include baseFlexB(row wrap, center, center);
-            .present_content{
-                @include baseFlexB(column wrap, center, center);
-                margin: 20px 30px;
-                width: 264px;   
-                h3{
-                    font-size: 18px;
-                    text-transform: uppercase;
-                }
-                img{
-                    width: 100px;
+            h1{
+                color: $fourthColor;
+                font-size: 18px;
+                font-weight: normal;
+            }
+            .present_container_block{
+                margin: 20px 0;
+                font-size: 16px;
+                font-weight: normal;
+                @include baseFlexB(row wrap, center, center);
+                .present_content{
+                    @include baseFlexB(column wrap, center, center);
+                    margin: 20px 30px;
+                    width: 264px;   
+                    h3{
+                        font-size: 18px;
+                        text-transform: uppercase;
+                    }
+                    img{
+                        width: 100px;
+                    }
                 }
             }
-        }
-        .present_citation{
-            max-width: 400px;
-            text-align: center;
-            font-style: italic;
-            margin: 10px auto;
-            padding: 10px;
-            color: white;
-            background-color: $fourthColor;
-            font-size: 16px;
-            q{
-                margin: 0 20px;
-                
-                cite{
-                    display: inline-block;
-                    margin: 0;
+            .present_citation{
+                max-width: 400px;
+                text-align: center;
+                font-style: italic;
+                margin: 10px auto;
+                padding: 10px;
+                color: white;
+                background-color: $fourthColor;
+                font-size: 16px;
+                q{
+                    margin: 0 20px;
+                    
+                    cite{
+                        display: inline-block;
+                        margin: 0;
+                        font-weight: normal;
+                    }
+                }
+                strong{
                     font-weight: normal;
                 }
             }
-            strong{
-                font-weight: normal;
-            }
         }
     }
-}
 
 }
 
@@ -103,6 +104,7 @@ main{
         padding: 20px 20px 40px 20px;
         text-align: center;
         z-index: 1;
+        height: 500px;
         &::before{
             content: '';
             display: inline-block;
@@ -115,6 +117,7 @@ main{
             opacity: 0.7;
         }
         p{
+            max-width: 750px;
                 &:nth-child(2){
                     font-size: 16px;
                     color: $secondaryColor;
@@ -152,7 +155,7 @@ main{
         .realisation-articles{
             article{
                 max-width: 375px;
-                margin: 40px 0;            
+                margin: 40px 0 0;            
                 h3{
                     font-size: 16px;
                     text-transform: uppercase;
@@ -171,10 +174,12 @@ main{
 }
 
 .banniere-2{
+    @include baseFlexB(column wrap, center, center);
     .banniere-2_content{
         @include baseFlexB(column wrap, center, center);
         color: white;
         font-weight: bold;
+        width: 500px;
         a{
             margin-top: 15px;
             font-size: 16px;
@@ -188,7 +193,38 @@ main{
 
 }
 
+/* Fin Main Responsive Mobile */
 
+/* Début Main Responsive Tablette */
 
-/* Fin Main */
+@media only screen and (min-width : 768px) {
+    main{
+        .main_present{
+            .present_container{
+                h1{
+                    font-size: 26px;
+                    max-width: 800px;
+                    margin: auto;
+                }
+            }
+        }
+        .main_realisation{
+            display: flex;
+            justify-content: center;
+            .realisation-block{
+                width: 70%;
+                .realisation-articles{
+                    @include baseFlexB(row wrap, space-evenly, center);
+                    gap: 30px;
+                    max-width: 830px;
+                    article{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Fin Main Responsive Tablette  */
 

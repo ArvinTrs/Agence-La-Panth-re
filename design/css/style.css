@@ -40,86 +40,6 @@ strong {
 /* End GLOBAL */
 /* début Page container */
 /* Fin Page container */
-/* Début Header */
-header {
-  padding: 10px 15px 5px 15px; }
-  header nav {
-    position: relative;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: center;
-    height: 60px;
-    width: 100%; }
-    header nav .logo-full {
-      width: 250px; }
-    header nav ul {
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      top: 70px;
-      left: -100%;
-      text-align: center;
-      padding: 0;
-      line-height: 25px;
-      text-transform: uppercase;
-      font-weight: bold;
-      background-color: white; }
-      header nav ul li {
-        display: block;
-        border: solid 1px #919191; }
-        header nav ul li a {
-          display: block; }
-        header nav ul li:last-child {
-          border-top: none; }
-        header nav ul li:hover {
-          background-color: #686868; }
-          header nav ul li:hover a {
-            color: white; }
-    header nav .checkbtn {
-      position: absolute;
-      right: 0;
-      color: #8d8d8d;
-      font-size: 23px;
-      cursor: pointer; }
-    header nav #check {
-      display: none; }
-      header nav #check:checked ~ ul {
-        left: 0;
-        top: 59px;
-        transition: left 500ms;
-        z-index: 2; }
-
-/* Fin Header */
-@media only screen and (min-width: 768px) {
-  header {
-    margin: auto;
-    max-width: 1300px; }
-    header nav {
-      justify-content: space-between; }
-      header nav .checkbtn {
-        display: none; }
-      header nav ul {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        position: inherit;
-        top: 0;
-        left: 0;
-        width: fit-content;
-        height: inherit;
-        margin: 0;
-        letter-spacing: 1px; }
-        header nav ul li {
-          display: inline;
-          border: none;
-          margin: 0 15px; }
-          header nav ul li:hover {
-            text-decoration: underline;
-            background-color: white; }
-            header nav ul li:hover a {
-              color: black; } }
 /* Début Main Responsive Mobile */
 main h2 {
   font-size: 24px;
@@ -213,8 +133,7 @@ main .main_present {
     font-size: 18px;
     padding: 20px 20px 40px 20px;
     text-align: center;
-    z-index: 1;
-    height: 500px; }
+    z-index: 1; }
     .main_objectif .main_objectif_block::before {
       content: '';
       display: inline-block;
@@ -225,14 +144,12 @@ main .main_present {
       height: 100%;
       z-index: -1;
       opacity: 0.7; }
-    .main_objectif .main_objectif_block p {
-      max-width: 750px; }
-      .main_objectif .main_objectif_block p:nth-child(2) {
-        font-size: 16px;
-        color: #fad5c4; }
-      .main_objectif .main_objectif_block p:nth-child(3) {
-        color: white;
-        font-size: 16px; }
+    .main_objectif .main_objectif_block p:nth-child(2) {
+      font-size: 16px;
+      color: #fad5c4; }
+    .main_objectif .main_objectif_block p:nth-child(3) {
+      color: white;
+      font-size: 16px; }
     .main_objectif .main_objectif_block a {
       font-size: 16px;
       color: white;
@@ -279,8 +196,7 @@ main .main_present {
     justify-content: center;
     align-items: center;
     color: white;
-    font-weight: bold;
-    width: 500px; }
+    font-weight: bold; }
     .banniere-2 .banniere-2_content a {
       margin-top: 15px;
       font-size: 16px;
@@ -297,6 +213,10 @@ main .main_present {
     font-size: 26px;
     max-width: 800px;
     margin: auto; }
+  main .main_objectif .main_objectif_block {
+    height: 500px; }
+    main .main_objectif .main_objectif_block p {
+      max-width: 750px; }
   main .main_realisation {
     display: flex;
     justify-content: center; }
@@ -310,7 +230,9 @@ main .main_present {
         gap: 30px;
         max-width: 830px; }
         main .main_realisation .realisation-block .realisation-articles article {
-          width: 100%; } }
+          width: 100%; }
+  main .banniere-2 .banniere-2_content {
+    width: 500px; } }
 /* Fin Main Responsive Tablette  */
 footer {
   margin: auto;

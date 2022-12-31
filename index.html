@@ -24,18 +24,16 @@
 	<div class="page_container">
 		<!-- Début entête -->
 		<header>
-			<nav class="navbar">
-				<input type="checkbox" id="check">
-				<label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
-				<label class="navbar-brand"><a href="index.html"><img class="logo-full" src="img/logo-full_lp2.png" alt="Agence La panthère"></a></label>
-
-				<ul class="site-navigation">
-					<li>
-						<a class="active" href="index.html">Accueil</a>
-					</li>
-					<li>
-						<a class="active" href="contact.html">Contact</a>
-					</li>
+			<nav> 
+				<ul class="nav-bar">
+					<li class="logo"><a href="index.html"><img class="logo-full" src="img/logo-full_lp2.png" alt="Agence La panthère"></a></li>
+					<input type="checkbox" id="check">
+					<span class="menu">
+						<li><a href="index.html">Accueil</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+					</span>
+					<label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
 				</ul>
 			</nav>
 		</header>

@@ -1,0 +1,93 @@
+header{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 4;
+    nav{
+        margin: 20px 10px;
+        .nav-bar{
+            @include baseFlexB (row wrap, space-between, center);
+            width: 100%;
+            margin: auto;
+            padding: 0;
+            .logo{
+                width: fit-content;
+            }
+            #check{
+                position: absolute;
+                left: -1999px;
+                &:checked ~ .menu {
+                    right: 0;
+                }
+            }
+            .open-menu{
+                font-size: 20px;
+                margin: 0 14px;
+                cursor: pointer;
+            }
+            .menu{
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                height: 100vh;
+                background-color: rgb(255, 255, 255);
+                transition: 0.15s ease-in-out;
+                .close-menu{
+                    display: inline;
+                    @include baseFlexB(row wrap, end, center);
+                    margin: 30px 20px;
+                    font-size: 26px;
+                    cursor: pointer;
+                }
+                li{
+                    text-align: center;
+                    font-size: 20px;
+                    padding: 10px 0;
+                    &:hover{
+                        background-color: rgb(255, 207, 144);
+                    }
+                    a{
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width : 768px) {
+    header{
+        nav{
+            max-width: 1300px;
+            margin: 15px auto;
+            .nav-bar{
+                position: relative;
+                .logo{
+                    margin-left: 30px;
+                }
+                .open-menu{display: none;}
+                .menu{
+                    @include baseFlexB(row wrap, space-evenly, center);
+                    position: absolute;
+                    height: 100%;
+                    right: 0;
+                    width: 200px;
+                    transition: none;
+                    .close-menu{display: none;}
+                    li{
+                        width: fit-content;
+                        padding: 0;
+                        &:hover{
+                            background-color: rgb(255, 255, 255);
+                        }
+                        a{
+                            font-size: 16px;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

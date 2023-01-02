@@ -8,6 +8,7 @@ main{
         color: white;
     }
     .main_block_banniere{
+        position: relative;
         background: url(../../img/back-img1.jpg) 50%;
         background-position: 50%;
         background-size: cover;
@@ -24,15 +25,15 @@ main{
             a{
                 font-size: 16px;
                 color: white;
-                background-color: rgb(243, 151, 108);
+                background-color: $primaryColor;
                 padding: 10px 25px;
                 border-radius: 25px;
                 text-transform: uppercase;
-                box-shadow: 1px 1px rgb(228, 121, 72);
+                box-shadow: 1px 1px #da7b4b;
             }
         }
     }
-
+    
     .main_present{
         padding: 40px 20px;
         .present_container{
@@ -108,7 +109,7 @@ main{
         &::before{
             content: '';
             display: inline-block;
-            background-color: $thirdColor;
+            background-color: $fifthColor;
             position: absolute;
             top: 0;
             width: 100%;

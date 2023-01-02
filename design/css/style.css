@@ -2,6 +2,12 @@
 * {
   box-sizing: border-box; }
 
+/*
+$primaryColor: #F3976C;
+$secondaryColor: rgb(250, 213, 196);
+$thirdColor: rgb(141, 117, 80);
+$fourthColor: rgb(104, 104, 104);
+$fifthColor: rgb(51, 51, 51); */
 /* Start GLOBAL */
 html {
   font-size: 62.5%; }
@@ -15,7 +21,7 @@ body {
     font-weight: 700;
     margin: 0;
     text-align: center;
-    color: #333333; }
+    color: #3e3e3e; }
   body p, body a {
     text-align: center; }
   body a {
@@ -129,6 +135,7 @@ main {
     font-size: 24px;
     color: white; }
   main .main_block_banniere {
+    position: relative;
     background: url(../../img/back-img1.jpg) 50%;
     background-position: 50%;
     background-size: cover;
@@ -147,11 +154,11 @@ main {
       main .main_block_banniere .block_banniere_content a {
         font-size: 16px;
         color: white;
-        background-color: #f3976c;
+        background-color: #ff6434;
         padding: 10px 25px;
         border-radius: 25px;
         text-transform: uppercase;
-        box-shadow: 1px 1px #e47948; }
+        box-shadow: 1px 1px #da7b4b; }
   main .main_present {
     padding: 40px 20px; }
     main .main_present .present_container {
@@ -221,7 +228,7 @@ main {
     .main_objectif .main_objectif_block::before {
       content: '';
       display: inline-block;
-      background-color: #8d7550;
+      background-color: #3e3e3e;
       position: absolute;
       top: 0;
       width: 100%;
@@ -230,7 +237,7 @@ main {
       opacity: 0.7; }
     .main_objectif .main_objectif_block p:nth-child(2) {
       font-size: 16px;
-      color: #fad5c4; }
+      color: #dd2c00; }
     .main_objectif .main_objectif_block p:nth-child(3) {
       color: white;
       font-size: 16px; }
@@ -253,7 +260,7 @@ main {
     padding: 40px 20px; }
     .main_realisation .realisation-block h2 {
       font-weight: normal;
-      color: #333333;
+      color: #3e3e3e;
       font-size: 26px;
       text-align: center; }
     .main_realisation .realisation-block .realisation-articles article {
@@ -285,7 +292,7 @@ main {
       margin-top: 15px;
       font-size: 16px;
       color: white;
-      background-color: #f3976c;
+      background-color: #ff6434;
       padding: 10px 16px;
       border-radius: 25px;
       box-shadow: 0.5px 0.5px #e47948; }
@@ -320,7 +327,7 @@ main {
 /* Fin Main Responsive Tablette  */
 footer {
   margin: auto;
-  background-color: #f3976c;
+  background-color: #ff6434;
   color: black;
   padding: 20px; }
   footer .footer-block {

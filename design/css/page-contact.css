@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/*
+$primaryColor: #F3976C;
+$secondaryColor: rgb(250, 213, 196);
+$thirdColor: rgb(141, 117, 80);
+$fourthColor: rgb(104, 104, 104);
+$fifthColor: rgb(51, 51, 51); */
 /* Start GLOBAL */
 html {
   font-size: 62.5%; }
@@ -12,7 +18,7 @@ body {
     font-weight: 700;
     margin: 0;
     text-align: center;
-    color: #333333; }
+    color: #3e3e3e; }
   body p, body a {
     text-align: center; }
   body a {
@@ -124,7 +130,7 @@ main {
   main .main_block_banniere {
     background-image: url(../../img/texture-paper.png.png);
     background-size: contain;
-    background-color: #f3976c;
+    background-color: #ff6434;
     padding: 20px;
     color: white;
     font-size: 16px; }
@@ -141,7 +147,7 @@ main {
       margin-top: 20px; }
       main .main_block_banniere form fieldset {
         font-weight: 600;
-        border: 2px solid #fad5c4;
+        border: 2px solid #dd2c00;
         border-radius: 15px; }
         main .main_block_banniere form fieldset legend {
           font-size: 16px; }
@@ -154,11 +160,11 @@ main {
           resize: both;
           width: 100%;
           border-radius: 15px;
-          border: 1px solid #8d7550; }
+          border: 1px solid #a30000; }
         main .main_block_banniere form fieldset button {
           margin: auto;
           font-size: 14px;
-          color: #f3976c;
+          color: #ff6434;
           border: none;
           background-color: white;
           padding: 10px 25px;
@@ -192,7 +198,7 @@ main {
 
 footer {
   margin: auto;
-  background-color: #f3976c;
+  background-color: #ff6434;
   color: black;
   padding: 20px; }
   footer .footer-block {

@@ -94,7 +94,7 @@ header {
           font-size: 20px;
           padding: 10px 0; }
           header nav .nav-bar .menu li:hover {
-            background-color: #ffcf90; }
+            background-color: #ff6434; }
           header nav .nav-bar .menu li a {
             display: inline; }
 
@@ -237,18 +237,18 @@ main {
       opacity: 0.7; }
     .main_objectif .main_objectif_block p:nth-child(2) {
       font-size: 16px;
-      color: #dd2c00; }
+      color: #ff6434; }
     .main_objectif .main_objectif_block p:nth-child(3) {
       color: white;
       font-size: 16px; }
     .main_objectif .main_objectif_block a {
       font-size: 16px;
       color: white;
-      background-color: #f3976c;
+      background-color: #ff6434;
       padding: 10px 25px;
       border-radius: 25px;
       text-transform: uppercase;
-      box-shadow: 1px 1px #e47948; }
+      box-shadow: 1px 1px #dd2c00; }
 
 .main_realisation {
   background-image: url(../../img/texture-line.png.png); }

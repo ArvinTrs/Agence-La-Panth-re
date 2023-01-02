@@ -120,7 +120,7 @@ main{
         p{
                 &:nth-child(2){
                     font-size: 16px;
-                    color: $secondaryColor;
+                    color: $primaryColor;
             }
                 &:nth-child(3){
                     color: white;
@@ -131,11 +131,11 @@ main{
         a{
             font-size: 16px;
             color: white;
-            background-color: rgb(243, 151, 108);
+            background-color: $primaryColor;
             padding: 10px 25px;
             border-radius: 25px;
             text-transform: uppercase;
-            box-shadow: 1px 1px rgb(228, 121, 72);
+            box-shadow: 1px 1px $secondaryColor;
         }
         
     }

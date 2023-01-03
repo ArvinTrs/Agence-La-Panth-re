@@ -16,52 +16,11 @@ main{
                 font-size: 14px;
 
             }
-        }
-        form{
-            @include baseFlexB(row wrap, center, center);
-            margin-top: 20px;
-            fieldset{
-                font-weight: 600;
-                border: 2px solid $secondaryColor;
-                border-radius: 15px;
-                legend{
-                    font-size: 16px;
-                }
-                & > div{
-                    margin: 15px 0;
-                }
-                input{
-                    padding: 2px;
-                    height: 35px;
-                }
-                input, textarea{
-                    resize : both;
-                    width: 100%;
-                    border-radius: 15px;
-                    border: 1px solid $thirdColor; 
-                }
-                button{
-                    margin: auto;
-                    font-size: 14px;
-                    color: $primaryColor;
-                    border: none;
-                    background-color: white;
-                    padding: 10px 25px;
-                    border-radius: 25px;
-                    box-shadow: 1px 1px rgb(227, 227, 227);
-                    cursor: pointer;
-                    transition: transform 400ms;
-                    &:hover{
-                        background-color: rgb(165, 165, 165);
-                        color: white;
-                        transition: all 500ms;
-                    }
-                }
-            }
-        }
-        
+        }     
     }
-    .main_loca{
+
+    .main_loca-form{
+        @include baseFlexB(row wrap, center, center);
         h2{
             font-size: 18px;
             color: $fourthColor;
@@ -75,12 +34,56 @@ main{
                     color: $fourthColor;
                 }
             }
-            .main_loca-map{
+            .main_loca-form-map{
                 margin: 25px 20px 0 20px;
                 max-width: 600px;
                 #gMap{
                     width: 100%;
                     height: 200px;
+                }
+            }
+        }
+        .main_form-block{
+            form{
+                @include baseFlexB(row wrap, center, center);
+                margin: 20px;
+                fieldset{
+                    font-weight: 600;
+                    border: 2px solid $secondaryColor;
+                    border-radius: 15px;
+                    legend{
+                        font-size: 16px;
+                    }
+                    & > div{
+                        margin: 15px 0;
+                    }
+                    input{
+                        padding: 2px;
+                        height: 35px;
+                    }
+                    input, textarea{
+                        resize : both;
+                        width: 100%;
+                        border-radius: 15px;
+                        border: 1px solid $thirdColor; 
+                    }
+                    button{
+                        margin: auto;
+                        font-size: 14px;
+                        color: black;
+                        border: none;
+                        background-color: $primaryColor;
+                        padding: 10px 25px;
+                        border-radius: 25px;
+                        box-shadow: 1px 1px rgb(227, 227, 227);
+                        cursor: pointer;
+                        transition: transform 400ms;
+                        &:hover{
+                            background-color: $thirdColor;
+                            color: white;
+                            transition: all 500ms;
+                        }
+                    }
                 }
             }
         }

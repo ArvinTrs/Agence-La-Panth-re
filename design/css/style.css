@@ -167,7 +167,7 @@ main {
         width: 100px; }
       main .main_block_banniere .block_banniere_content h2 {
         font-size: 26px;
-        color: #ff6434;
+        color: black;
         text-shadow: 0.9px 0.9px 1.5px white; }
       main .main_block_banniere .block_banniere_content a {
         font-size: 16px;

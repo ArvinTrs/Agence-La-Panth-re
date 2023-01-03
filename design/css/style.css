@@ -21,7 +21,7 @@ body {
     font-weight: 700;
     margin: 0;
     text-align: center;
-    color: #3e3e3e; }
+    color: #453430; }
   body p, body a {
     text-align: center; }
   body a {
@@ -153,7 +153,7 @@ main {
         width: 100px; }
       main .main_block_banniere .block_banniere_content a {
         font-size: 16px;
-        color: white;
+        color: black;
         background-color: #ff6434;
         padding: 10px 25px;
         border-radius: 25px;
@@ -228,7 +228,7 @@ main {
     .main_objectif .main_objectif_block::before {
       content: '';
       display: inline-block;
-      background-color: #3e3e3e;
+      background-color: #453430;
       position: absolute;
       top: 0;
       width: 100%;
@@ -243,7 +243,7 @@ main {
       font-size: 16px; }
     .main_objectif .main_objectif_block a {
       font-size: 16px;
-      color: white;
+      color: black;
       background-color: #ff6434;
       padding: 10px 25px;
       border-radius: 25px;
@@ -260,7 +260,7 @@ main {
     padding: 40px 20px; }
     .main_realisation .realisation-block h2 {
       font-weight: normal;
-      color: #3e3e3e;
+      color: #453430;
       font-size: 26px;
       text-align: center; }
     .main_realisation .realisation-block .realisation-articles article {
@@ -291,7 +291,7 @@ main {
     .banniere-2 .banniere-2_content a {
       margin-top: 15px;
       font-size: 16px;
-      color: white;
+      color: black;
       background-color: #ff6434;
       padding: 10px 16px;
       border-radius: 25px;

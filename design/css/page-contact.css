@@ -194,8 +194,7 @@ main {
           padding: 10px 25px;
           border-radius: 25px;
           box-shadow: 1px 1px #e3e3e3;
-          cursor: pointer;
-          transition: transform 400ms; }
+          cursor: pointer; }
           main .main_loca-form .main_form-block form fieldset button:hover {
             background-color: #a30000;
             color: white;

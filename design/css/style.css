@@ -165,6 +165,10 @@ main {
         opacity: 0.8; }
       main .main_block_banniere .block_banniere_content .logo {
         width: 100px; }
+      main .main_block_banniere .block_banniere_content h2 {
+        font-size: 26px;
+        color: #ff6434;
+        text-shadow: 0.9px 0.9px 1.5px white; }
       main .main_block_banniere .block_banniere_content a {
         font-size: 16px;
         color: black;
@@ -173,6 +177,11 @@ main {
         border-radius: 25px;
         text-transform: uppercase;
         box-shadow: 1px 1px #da7b4b; }
+        main .main_block_banniere .block_banniere_content a:hover {
+          background-color: #c74e29;
+          color: white;
+          transition: all 500ms;
+          box-shadow: 0 0 2px 2px white; }
   main .main_present {
     padding: 40px 20px; }
     main .main_present .present_container {
@@ -260,6 +269,11 @@ main {
       border-radius: 25px;
       text-transform: uppercase;
       box-shadow: 1px 1px #dd2c00; }
+      .main_objectif .main_objectif_block a:hover {
+        background-color: #c74e29;
+        color: white;
+        transition: all 500ms;
+        box-shadow: 0 0 2px 2px white; }
 
 .main_realisation {
   background-image: url(../../img/texture-line.png.png); }
@@ -321,6 +335,11 @@ main {
       padding: 10px 16px;
       border-radius: 25px;
       box-shadow: 0.5px 0.5px #e47948; }
+      .banniere-2 .banniere-2_content a:hover {
+        background-color: #c74e29;
+        color: white;
+        transition: all 500ms;
+        box-shadow: 0 0 2px 2px white; }
 
 /* Fin Main Responsive Mobile */
 /* Début Main Responsive Tablette */

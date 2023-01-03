@@ -37,6 +37,11 @@ main{
             .logo{
                 width: 100px;
             }
+            h2{
+                font-size: 26px;
+                color: $primaryColor;
+                text-shadow: 0.9px 0.9px 1.5px white;
+            }
             a{
                 font-size: 16px;
                 color: black;
@@ -45,6 +50,12 @@ main{
                 border-radius: 25px;
                 text-transform: uppercase;
                 box-shadow: 1px 1px #da7b4b;
+                &:hover{
+                    background-color: #c74e29;
+                    color: white;
+                    transition: all 500ms;
+                    box-shadow: 0 0 2px 2px white;
+                }
             }
         }
     }
@@ -145,6 +156,12 @@ main{
             border-radius: 25px;
             text-transform: uppercase;
             box-shadow: 1px 1px $secondaryColor;
+            &:hover{
+                background-color: #c74e29;
+                color: white;
+                transition: all 500ms;
+                box-shadow: 0 0 2px 2px white;
+            }
         }
         
     }
@@ -213,6 +230,12 @@ main{
             padding: 10px 16px;
             border-radius: 25px;
             box-shadow: 0.5px 0.5px rgb(228, 121, 72);
+            &:hover{
+                background-color: #c74e29;
+                color: white;
+                transition: all 500ms;
+                box-shadow: 0 0 2px 2px white;
+            }
         }
     }
 }

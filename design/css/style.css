@@ -257,7 +257,7 @@ main {
       width: 100%;
       height: 100%;
       z-index: -1;
-      opacity: 0.7; }
+      opacity: 0.9; }
     .main_objectif .main_objectif_block p {
       font-size: 16px;
       color: white; }
@@ -326,7 +326,7 @@ main {
       width: 100%;
       height: 275.8px;
       z-index: -1;
-      opacity: 0.7; }
+      opacity: 1; }
     .banniere-2 .banniere-2_content a {
       margin-top: 15px;
       font-size: 16px;

@@ -76,7 +76,8 @@ header {
         width: 80%;
         height: 100vh;
         background-color: white;
-        transition: 0.15s ease-in-out; }
+        transition: 0.15s ease-in-out;
+        border-left: 1px solid #cccccc; }
         header nav .nav-bar .menu .close-menu {
           display: inline;
           display: flex;
@@ -114,7 +115,8 @@ header {
         height: 100%;
         right: 0;
         width: 200px;
-        transition: none; }
+        transition: none;
+        border: none; }
         header nav .nav-bar .menu .close-menu {
           display: none; }
         header nav .nav-bar .menu li {

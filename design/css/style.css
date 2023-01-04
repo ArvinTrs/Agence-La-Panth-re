@@ -79,7 +79,8 @@ header {
         width: 80%;
         height: 100vh;
         background-color: white;
-        transition: 0.15s ease-in-out; }
+        transition: 0.15s ease-in-out;
+        border-left: 1px solid #cccccc; }
         header nav .nav-bar .menu .close-menu {
           display: inline;
           display: flex;
@@ -117,7 +118,8 @@ header {
         height: 100%;
         right: 0;
         width: 200px;
-        transition: none; }
+        transition: none;
+        border: none; }
         header nav .nav-bar .menu .close-menu {
           display: none; }
         header nav .nav-bar .menu li {
@@ -136,7 +138,7 @@ main {
     color: white; }
   main .main_block_banniere {
     position: relative;
-    background: url(../../img/back-img1.jpg) 50%;
+    background: url(../../img/back-img1.webp) 50%;
     background-attachment: fixed;
     background-position: 50%;
     background-size: cover;
@@ -227,7 +229,7 @@ main {
           font-weight: normal; }
 
 .main_objectif {
-  background: url(../../img/back-img2.jpg);
+  background: url(../../img/back-img2.webp);
   background-size: cover;
   background-position: 50%;
   background-attachment: fixed; }

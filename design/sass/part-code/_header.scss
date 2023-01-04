@@ -33,6 +33,7 @@ header{
                 height: 100vh;
                 background-color: rgb(255, 255, 255);
                 transition: 0.15s ease-in-out;
+                border-left: 1px solid rgb(204, 204, 204);
                 .close-menu{
                     display: inline;
                     @include baseFlexB(row wrap, end, center);
@@ -74,6 +75,7 @@ header{
                     right: 0;
                     width: 200px;
                     transition: none;
+                    border: none;
                     .close-menu{display: none;}
                     li{
                         width: fit-content;

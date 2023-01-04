@@ -9,11 +9,12 @@ main{
     }
     .main_block_banniere{
         position: relative;
-        background: url(../../img/back-img1.webp);
+        background: url(../../img/back-img1b.jpg);
         background-attachment: fixed;
         background-position: 50%;
         background-size: cover;
         padding: 50px 5px;
+        width: 100%;
         .block_banniere_content{
             @include baseFlexB(column wrap, center, center);
             position: relative;

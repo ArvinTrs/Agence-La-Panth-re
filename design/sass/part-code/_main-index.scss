@@ -49,8 +49,6 @@ main{
                 text-transform: uppercase;
                 box-shadow: 1px 1px #da7b4b;
                 &:hover{
-                    background-color: #c74e29;
-                    color: white;
                     transition: all 500ms;
                     box-shadow: 0 0 2px 2px white;
                 }
@@ -155,13 +153,10 @@ main{
             text-transform: uppercase;
             box-shadow: 1px 1px $secondaryColor;
             &:hover{
-                background-color: #c74e29;
-                color: white;
                 transition: all 500ms;
                 box-shadow: 0 0 2px 2px white;
             }
-        }
-        
+        }       
     }
 }
 
@@ -226,9 +221,7 @@ main{
             border-radius: 25px;
             box-shadow: 0.5px 0.5px rgb(228, 121, 72);
             &:hover{
-                background-color: #c74e29;
-                color: white;
-                transition: all 500ms;
+                transition: all 200ms;
                 box-shadow: 0 0 2px 2px white;
             }
         }

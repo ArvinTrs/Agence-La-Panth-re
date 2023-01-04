@@ -178,8 +178,6 @@ main {
         text-transform: uppercase;
         box-shadow: 1px 1px #da7b4b; }
         main .main_block_banniere .block_banniere_content a:hover {
-          background-color: #c74e29;
-          color: white;
           transition: all 500ms;
           box-shadow: 0 0 2px 2px white; }
   main .main_present {
@@ -270,8 +268,6 @@ main {
       text-transform: uppercase;
       box-shadow: 1px 1px #dd2c00; }
       .main_objectif .main_objectif_block a:hover {
-        background-color: #c74e29;
-        color: white;
         transition: all 500ms;
         box-shadow: 0 0 2px 2px white; }
 
@@ -333,9 +329,7 @@ main {
       border-radius: 25px;
       box-shadow: 0.5px 0.5px #e47948; }
       .banniere-2 .banniere-2_content a:hover {
-        background-color: #c74e29;
-        color: white;
-        transition: all 500ms;
+        transition: all 200ms;
         box-shadow: 0 0 2px 2px white; }
 
 /* Fin Main Responsive Mobile */

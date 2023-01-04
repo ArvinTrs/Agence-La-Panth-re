@@ -17,6 +17,10 @@ footer{
             font-size: 35px;
             a{
                 color: black;
+                p{
+                    position: absolute;
+                    left: -9999px;
+                }
             }
         }
         nav{

@@ -216,6 +216,9 @@ footer {
       font-size: 35px; }
       footer .footer-block .footer_social a {
         color: black; }
+        footer .footer-block .footer_social a p {
+          position: absolute;
+          left: -9999px; }
     footer .footer-block nav {
       font-size: 18px;
       width: 100%; }

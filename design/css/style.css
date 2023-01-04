@@ -155,7 +155,7 @@ main {
       main .main_block_banniere .block_banniere_content::before {
         content: '';
         display: inline-block;
-        background-color: #553D2C;
+        background-color: #3d2a24;
         position: absolute;
         top: -22%;
         width: 100%;
@@ -166,9 +166,7 @@ main {
       main .main_block_banniere .block_banniere_content .logo {
         width: 100px; }
       main .main_block_banniere .block_banniere_content h2 {
-        font-size: 26px;
-        color: black;
-        text-shadow: 0.9px 0.9px 1.5px white; }
+        font-size: 26px; }
       main .main_block_banniere .block_banniere_content a {
         font-size: 16px;
         color: black;
@@ -257,7 +255,7 @@ main {
       width: 100%;
       height: 100%;
       z-index: -1;
-      opacity: 0.9; }
+      opacity: 0.8; }
     .main_objectif .main_objectif_block p {
       font-size: 16px;
       color: white; }
@@ -305,10 +303,7 @@ main {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  align-items: center;
-  background-image: url(../../../img/texture-paper.png.png);
-  background-size: cover;
-  background-clip: content-box; }
+  align-items: center; }
   .banniere-2 .banniere-2_content {
     display: flex;
     flex-flow: column wrap;
@@ -326,7 +321,7 @@ main {
       width: 100%;
       height: 275.8px;
       z-index: -1;
-      opacity: 1; }
+      opacity: 0.8; }
     .banniere-2 .banniere-2_content a {
       margin-top: 15px;
       font-size: 16px;
@@ -385,6 +380,9 @@ footer {
       font-size: 35px; }
       footer .footer-block .footer_social a {
         color: black; }
+        footer .footer-block .footer_social a p {
+          position: absolute;
+          left: -9999px; }
     footer .footer-block nav {
       font-size: 18px;
       width: 100%; }

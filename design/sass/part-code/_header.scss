@@ -17,7 +17,7 @@ header{
                     height: 38.71px;
                 }
             }
-            .check, .check2{
+            .check, #check2{
                 position: absolute;
                 left: -1999px;
                 &:checked ~ .menu {

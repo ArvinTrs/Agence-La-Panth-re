@@ -57,10 +57,10 @@ header {
         header nav .nav-bar .logo .logo-full {
           width: 210px;
           height: 38.71px; }
-      header nav .nav-bar #check {
+      header nav .nav-bar .check, header nav .nav-bar .check2 {
         position: absolute;
         left: -1999px; }
-        header nav .nav-bar #check:checked ~ .menu {
+        header nav .nav-bar .check:checked ~ .menu, header nav .nav-bar .check2:checked ~ .menu {
           right: 0; }
       header nav .nav-bar .open-menu {
         font-size: 20px;
@@ -117,11 +117,13 @@ header {
         border: none; }
         header nav .nav-bar .menu .close-menu {
           display: none; }
+        header nav .nav-bar .menu span:hover {
+          background-color: white; }
+        header nav .nav-bar .menu span a {
+          display: block; }
         header nav .nav-bar .menu li {
           width: fit-content;
           padding: 0; }
-          header nav .nav-bar .menu li:hover {
-            background-color: white; }
           header nav .nav-bar .menu li a {
             font-size: 16px;
             display: block; } }

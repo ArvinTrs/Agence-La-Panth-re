@@ -17,7 +17,7 @@ header{
                     height: 38.71px;
                 }
             }
-            #check{
+            .check, .check2{
                 position: absolute;
                 left: -1999px;
                 &:checked ~ .menu {
@@ -82,12 +82,17 @@ header{
                     transition: none;
                     border: none;
                     .close-menu{display: none;}
+                    span{
+                        &:hover{
+                            background-color: white;
+                        }
+                        a{
+                            display: block  ;
+                        }
+                    }
                     li{
                         width: fit-content;
                         padding: 0;
-                        &:hover{
-                            background-color: rgb(255, 255, 255);
-                        }
                         a{
                             font-size: 16px;
                             display: block;
@@ -96,5 +101,6 @@ header{
                 }
             }
         }
+        
     }
 }

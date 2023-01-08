@@ -10,6 +10,12 @@ header{
             width: 100%;
             margin: auto;
             padding: 0;
+            label{
+                span{
+                    position: absolute;
+                    left: -9999px;
+                }
+            }
             .logo{
                 width: fit-content;
                 .logo-full{

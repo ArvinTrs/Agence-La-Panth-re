@@ -55,6 +55,9 @@ header {
       width: 100%;
       margin: auto;
       padding: 0; }
+      header nav .nav-bar label span {
+        position: absolute;
+        left: -9999px; }
       header nav .nav-bar .logo {
         width: fit-content; }
         header nav .nav-bar .logo .logo-full {

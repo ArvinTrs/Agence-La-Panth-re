@@ -17,11 +17,11 @@ header{
                     height: 38.71px;
                 }
             }
-            .check, #check2{
+            #check{
                 position: absolute;
                 left: -1999px;
                 &:checked ~ .menu {
-                    right: 0;
+                    left: 0;
                 }
             }
             .open-menu{
@@ -32,18 +32,18 @@ header{
             .menu{
                 position: fixed;
                 top: 0;
-                right: -100%;
+                left: -100%;
                 width: 80%;
                 height: 100vh;
                 background-color: rgb(255, 255, 255);
                 transition: 0.15s ease-in-out;
                 border-left: 1px solid rgb(204, 204, 204);
-                .close-menu{
-                    display: inline;
-                    @include baseFlexB(row wrap, end, center);
-                    margin: 30px 20px;
-                    font-size: 26px;
-                    cursor: pointer;
+                div{
+                    display: flex;
+                    justify-content: center;
+                    .logo{
+                        width: 70px;
+                    }
                 }
                 span{
                     display: block;
@@ -69,19 +69,23 @@ header{
             margin: 15px auto;
             .nav-bar{
                 position: relative;
+                justify-content: space-between;
                 .logo{
                     margin-left: 30px;
                 }
                 .open-menu{display: none;}
                 .menu{
                     @include baseFlexB(row wrap, space-evenly, center);
-                    position: absolute;
+                    position: initial;
                     height: 100%;
-                    right: 0;
                     width: 200px;
                     transition: none;
                     border: none;
-                    .close-menu{display: none;}
+                    div{
+                        .logo{
+                            display: none;
+                        }
+                    }
                     span{
                         &:hover{
                             background-color: white;
@@ -89,6 +93,7 @@ header{
                         a{
                             display: block  ;
                         }
+
                     }
                     li{
                         width: fit-content;

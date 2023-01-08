@@ -77,7 +77,10 @@ header{
                 .logo{
                     margin-left: 30px;
                 }
-                .open-menu{display: none;}
+                .open-menu{
+                    position: absolute;
+                    left: -9999px;
+                }
                 .menu{
                     @include baseFlexB(row wrap, space-evenly, center);
                     position: initial;

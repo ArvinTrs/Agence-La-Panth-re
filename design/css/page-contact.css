@@ -22,6 +22,8 @@ body {
   body ul, body ol {
     list-style-type: none;
     list-style: none; }
+  body .jquery-modal {
+    z-index: 4; }
 
 strong {
   font-weight: normal;
@@ -41,7 +43,7 @@ header {
   position: fixed;
   width: 100%;
   background-color: white;
-  z-index: 4; }
+  z-index: 3; }
   header nav {
     margin: 20px 10px; }
     header nav .nav-bar {
@@ -80,7 +82,7 @@ header {
         height: 100vh;
         background-color: white;
         transition: 0.15s ease-in-out;
-        border-left: 1px solid #cccccc; }
+        border-right: 1px solid #cccccc; }
         header nav .nav-bar .menu div {
           display: flex;
           justify-content: center; }

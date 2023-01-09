@@ -25,6 +25,8 @@ body {
   body ul, body ol {
     list-style-type: none;
     list-style: none; }
+  body .jquery-modal {
+    z-index: 4; }
 
 strong {
   font-weight: normal;
@@ -44,7 +46,7 @@ header {
   position: fixed;
   width: 100%;
   background-color: white;
-  z-index: 4; }
+  z-index: 3; }
   header nav {
     margin: 20px 10px; }
     header nav .nav-bar {
@@ -83,7 +85,7 @@ header {
         height: 100vh;
         background-color: white;
         transition: 0.15s ease-in-out;
-        border-left: 1px solid #cccccc; }
+        border-right: 1px solid #cccccc; }
         header nav .nav-bar .menu div {
           display: flex;
           justify-content: center; }
@@ -338,7 +340,7 @@ main {
         box-shadow: 0 0 2px 2px white; }
 
 /* Fin Main Responsive Mobile */
-/* Début Main Responsive Tablette */
+/* Début Main Responsive Tablette - Desktop */
 @media only screen and (min-width: 768px) {
   main .main_present .present_container h1 {
     font-size: 26px;
@@ -364,9 +366,15 @@ main {
         max-width: 830px; }
         main .main_realisation .realisation-block .realisation-articles article {
           width: 100%; }
+          main .main_realisation .realisation-block .realisation-articles article a img {
+            transform: scale(1);
+            animation: 1s ease-in 1s transform; }
+            main .main_realisation .realisation-block .realisation-articles article a img:hover {
+              content: '';
+              transform: scale(0.95); }
   main .banniere-2 .banniere-2_content {
     width: 500px; } }
-/* Fin Main Responsive Tablette  */
+/* Fin Main Responsive Tablette - Desktop  */
 footer {
   margin: auto;
   background-color: #ff6434;

@@ -232,7 +232,7 @@ main{
 
 /* Fin Main Responsive Mobile */
 
-/* Début Main Responsive Tablette */
+/* Début Main Responsive Tablette - Desktop */
 
 @media only screen and (min-width : 768px) {
     main{
@@ -267,6 +267,16 @@ main{
                     max-width: 830px;
                     article{
                         width: 100%;
+                        a{
+                            img{
+                                transform: scale(1);
+                                animation: 1s ease-in 1s transform;
+                                &:hover{
+                                    content: '';
+                                    transform: scale(0.95);
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -279,5 +289,5 @@ main{
     }
 }
 
-/* Fin Main Responsive Tablette  */
+/* Fin Main Responsive Tablette - Desktop  */
 

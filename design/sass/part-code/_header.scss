@@ -2,7 +2,7 @@ header{
     position: fixed;
     width: 100%;
     background-color: white;
-    z-index: 4;
+    z-index: 3;
     nav{
         margin: 20px 10px;
         .nav-bar{
@@ -47,7 +47,7 @@ header{
                 height: 100vh;
                 background-color: rgb(255, 255, 255);
                 transition: 0.15s ease-in-out;
-                border-left: 1px solid rgb(204, 204, 204);
+                border-right: 1px solid rgb(204, 204, 204);
                 div{
                     display: flex;
                     justify-content: center;

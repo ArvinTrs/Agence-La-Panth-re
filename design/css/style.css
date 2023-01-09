@@ -143,8 +143,9 @@ main {
     position: relative;
     background: url(../../img/back-img1b.jpg);
     background-attachment: fixed;
+    background-size: 980px 401px;
     background-position: 50%;
-    background-size: cover;
+    background-repeat: no-repeat;
     padding: 50px 5px;
     width: 100%; }
     main .main_block_banniere .block_banniere_content {
@@ -343,6 +344,8 @@ main {
     font-size: 26px;
     max-width: 800px;
     margin: auto; }
+  main .main_block_banniere {
+    background-size: cover; }
   main .main_objectif .main_objectif_block {
     height: 500px; }
     main .main_objectif .main_objectif_block p {

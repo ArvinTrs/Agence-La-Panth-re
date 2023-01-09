@@ -143,7 +143,7 @@ main {
     color: white; }
   main .main_block_banniere {
     position: relative;
-    background: url(../../../img/back-img1.webp);
+    background: url(../../img/back-img1b.jpg);
     background-attachment: fixed;
     background-size: 980px 401px;
     background-position: 50% 30%;

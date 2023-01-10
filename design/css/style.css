@@ -131,6 +131,8 @@ header {
           background-color: white; }
         header nav .nav-bar .menu span a {
           display: inline-block; }
+          header nav .nav-bar .menu span a:hover {
+            border-bottom: 2px solid #ff6434; }
         header nav .nav-bar .menu li {
           width: fit-content;
           padding: 0; }
@@ -141,7 +143,7 @@ header {
 main {
   padding-top: 69px; }
   main h2 {
-    font-size: 24px;
+    font-size: 20px;
     color: white; }
   main .main_block_banniere {
     position: relative;
@@ -187,7 +189,7 @@ main {
         text-transform: uppercase;
         box-shadow: 1px 1px #da7b4b; }
         main .main_block_banniere .block_banniere_content a:hover {
-          transition: all 500ms;
+          transition: all 180ms;
           box-shadow: 0 0 2px 2px white; }
   main .main_present {
     padding: 40px 20px; }
@@ -280,7 +282,7 @@ main {
       text-transform: uppercase;
       box-shadow: 1px 1px #dd2c00; }
       .main_objectif .main_objectif_block a:hover {
-        transition: all 500ms;
+        transition: all 180ms;
         box-shadow: 0 0 2px 2px white; }
 
 .main_realisation {
@@ -309,12 +311,19 @@ main {
       .main_realisation .realisation-block .realisation-articles article img {
         width: 100%; }
 
-.banniere-2 {
+.main_block_banniere-2 {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  align-items: center; }
-  .banniere-2 .banniere-2_content {
+  align-items: center;
+  position: relative;
+  background: url(../../img/back-img1b.jpg);
+  background-attachment: fixed;
+  background-position: 50%;
+  background-size: cover;
+  padding: 50px 5px;
+  width: 100%; }
+  .main_block_banniere-2 .banniere-2_content {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -322,7 +331,7 @@ main {
     color: white;
     font-weight: bold;
     z-index: 1; }
-    .banniere-2 .banniere-2_content::before {
+    .main_block_banniere-2 .banniere-2_content::before {
       content: '';
       display: inline-block;
       background-color: #553D2C;
@@ -332,7 +341,7 @@ main {
       height: 275.8px;
       z-index: -1;
       opacity: 0.8; }
-    .banniere-2 .banniere-2_content a {
+    .main_block_banniere-2 .banniere-2_content a {
       margin-top: 15px;
       font-size: 16px;
       color: black;
@@ -340,8 +349,8 @@ main {
       padding: 10px 16px;
       border-radius: 25px;
       box-shadow: 0.5px 0.5px #e47948; }
-      .banniere-2 .banniere-2_content a:hover {
-        transition: all 200ms;
+      .main_block_banniere-2 .banniere-2_content a:hover {
+        transition: all 180ms;
         box-shadow: 0 0 2px 2px white; }
 
 /* Fin Main Responsive Mobile */
@@ -364,6 +373,8 @@ main {
       padding: 50px 5px;
       z-index: -1;
       opacity: 0.8; }
+  main .main_objectif h2 {
+    font-size: 26px; }
   main .main_objectif .main_objectif_block {
     height: 500px; }
     main .main_objectif .main_objectif_block p {
@@ -384,7 +395,7 @@ main {
           width: 100%; }
           main .main_realisation .realisation-block .realisation-articles article a img {
             transform: scale(1);
-            animation: 1s ease-in 1s transform; }
+            animation: transform 500ms ease-in; }
             main .main_realisation .realisation-block .realisation-articles article a img:hover {
               content: '';
               transform: scale(0.95); }

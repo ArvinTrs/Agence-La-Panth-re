@@ -107,6 +107,9 @@ header{
                         }
                         a{
                             display: inline-block;
+                            &:hover{
+                                border-bottom: 2px solid $primaryColor;
+                            }
                         }
 
                     }

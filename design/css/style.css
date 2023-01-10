@@ -205,6 +205,9 @@ main {
         flex-flow: row wrap;
         justify-content: center;
         align-items: center; }
+        main .main_present .present_container .present_container_block h2 {
+          color: black;
+          text-transform: uppercase; }
         main .main_present .present_container .present_container_block .present_content {
           display: flex;
           flex-flow: column wrap;
